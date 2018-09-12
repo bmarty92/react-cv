@@ -1,0 +1,35 @@
+.Content-section {
+  display: flex;
+  margin: 15px;
+  min-height: 70px;
+}
+.Content-section-title {
+  border-right: 1px solid;
+  width: 15%;
+  text-align: right;
+  font-weight: 400;
+}
+.Content-section-title,
+.Content-section-info {
+  padding: 5px 20px;
+  color: #666;
+}
+.Content-section-info {
+  width: 80%;
+}
+.Content-section-headline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Content-section-list {
+  padding: 30px;
+  list-style: disc;
+}
+.Content-section-subtitle {
+  opacity: 0.6;
+}
+
+.Content-section-info-bold {
+  font-weight: 900;
+}

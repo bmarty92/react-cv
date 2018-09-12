@@ -1,0 +1,25 @@
+.Header {
+  padding: 40px 0px;
+  position: relative;
+
+}
+.Header-headline
+.Header-content {
+  max-width: 750px;
+  padding-right: 300px
+}
+.Header-content p   {
+  opacity: 0.7;
+}
+.Header-content-about {
+  font-style: italic;
+  padding-right: 220px;
+}
+.Header-image {
+  position: absolute;
+  max-height: 200px;
+  right: 40px;
+  top: 60px;
+  transform: rotate(-6deg);
+  box-shadow: 8px 8px 8px 8px;
+}
