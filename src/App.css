@@ -53,10 +53,24 @@
 .Content-section-info {
   width: 80%;
 }
+.Content-section-headline {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.Content-section-list {
+  padding: 30px;
+  list-style: disc;
+}
+.Content-section-subtitle {
+  opacity: 0.6;
+}
 
 .Content-section-info-bold {
   font-weight: 900;
 }
+
+
 .Footer {
   display: flex;
   flex-direction: row;

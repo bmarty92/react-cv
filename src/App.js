@@ -71,7 +71,18 @@ function App() {
               <h3>Experience</h3>
             </div>
             <div className="Content-section-info">
-              <p>In development...</p>
+              <div className="Content-section-headline">
+                <h3>Company</h3>
+                <p className="Content-section-subtitle">
+                  Jr. Front-end developer
+                </p>
+              </div>
+              <ul className="Content-section-list">
+                <li>Coding</li>
+                <li>Googling</li>
+                <li>Debuging</li>
+                <li>Improving</li>
+              </ul>
             </div>
           </section>
           <section className="Content-section">
@@ -102,6 +113,9 @@ function App() {
         </a>
         <a href="tel:+37061240963" target="_blank" rel="noopener noreferrer">
           <Icon name="phone" />
+        </a>
+        <a href="https://github.com/" target="_blank" rel="noopener noreferrer">
+          <Icon name="github" />
         </a>
       </footer>
     </div>
