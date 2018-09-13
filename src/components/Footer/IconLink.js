@@ -6,7 +6,7 @@ function IconLink(props) {
   const { href, icon } = props;
   return (
     <a href={href} target="_blank" rel="noopener noreferrer">
-      <Icon name={icon} />{' '}
+      <Icon name={icon} />
     </a>
   );
 }

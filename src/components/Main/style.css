@@ -16,6 +16,7 @@
 }
 .Content-section-info {
   width: 80%;
+  padding-bottom: 0;
 }
 .Content-section-headline {
   display: flex;
@@ -23,7 +24,7 @@
   justify-content: space-between;
 }
 .Content-section-list {
-  padding: 30px;
+  padding: 10px;
   list-style: disc;
 }
 .Content-section-subtitle {
@@ -33,3 +34,11 @@
 .Content-section-info-bold {
   font-weight: 900;
 }
+
+.Content-description-container
+ {
+   padding-bottom: 40px;
+ }
+ .Content-description-container:last-child {
+   padding-bottom: 0;
+ }
