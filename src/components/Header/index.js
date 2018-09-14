@@ -1,34 +1,22 @@
 import React from 'react';
-import './style.css'
+import data from './data';
+import './style.css';
 
 function Header() {
-  const portrait = 'https://i.redd.it/786vtfv1dedz.jpg';
+  const { title, image, phone, email, about } = data;
   return (
     <header className="Header">
-      <h1 className="Header-headline">Martynas Bušinskas</h1>
+      <h1 className="Header-headline">{title}</h1>
       <hr />
-      <img
-        className="Header-image"
-        src={portrait}
-        alt="cthulhu proffesional portrait"
-      />
+      <img className="Header-image" src={image.src} alt={image.alt} />
       <div className="Header-content">
-        <p>
-          <b>Phone:</b> +37061240963
-        </p>
-        <p>
-          <b>Email:</b> martynas.businskas@gmail.com
-        </p>
-        <p className="Header-content-about">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-          hendrerit quis arcu ac porttitor. Cras metus mauris, varius vitae
-          semper at, consectetur varius nibh. Vivamus tortor eros, auctor ac
-          mauris eget, consequat pulvinar quam. Maecenas nec leo placerat,
-          luctus elit vitae, fermentum ipsum. Quisque et maximus nisl. Aliquam
-          laoreet cursus tincidunt. In mauris ipsum, pellentesque eget velit
-          tincidunt, lacinia accumsan purus. Morbi vestibulum sem ut lorem
-          rutrum malesuada.
-        </p>
+        {phone && (<p>
+          <b>{phone.title}</b> {phone.number}
+        </p>)}
+        {email && (<p>
+          <b>{email.title}</b> {email.value}
+        </p> )}
+        <p className="Header-content-about">{about}</p>
       </div>
     </header>
   );
